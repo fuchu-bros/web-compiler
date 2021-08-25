@@ -1,0 +1,27 @@
+{
+  "name": "mirae-pb",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://msync_holee@bitbucket.org/msync1/mirae-pb.git",
+  "author": "holee <holee@m-sync.co.kr>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "autoprefixer-core": "^6.0.1",
+    "express": "^4.17.1",
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "pug": "^3.0.2",
+    "readline-sync": "^1.4.10",
+    "tailwindcss": "^2.1.2",
+    "websocket": "^1.0.34"
+  },
+  "scripts": {
+    "start": "nodemon --watch server.js server.js",
+    "build": "node builder.js",
+    "css:inline": "node src/inline.css.js --dev",
+    "css:inline:build": "node src/inline.css.js --production"
+  }
+}
